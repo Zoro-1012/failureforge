@@ -2,8 +2,6 @@
 
 **An AI-powered distributed-systems failure simulation and evaluation platform.**
 
-![CI](https://github.com/sneha-510/failureforge/actions/workflows/ci.yml/badge.svg)
-
 FailureForge creates realistic infrastructure failures in a controlled distributed
 environment, captures the telemetry generated during each incident, and evaluates
 AI-generated root-cause analyses against **known ground truth** — turning "can an
@@ -114,7 +112,7 @@ tests/            Pytest (unit + live-stack)
 Requires Docker Desktop (with Docker Compose).
 
 ```bash
-git clone https://github.com/sneha-510/failureforge.git
+git clone https://github.com/Zoro-1012/failureforge.git
 cd failureforge
 
 make up                 # build & start all services
