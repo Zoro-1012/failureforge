@@ -1,0 +1,267 @@
+[
+  {
+    "timestamp": "2026-06-27T09:12:06.505633+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:42"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:06.505715+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 10.93,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:08.572870+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:43"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:08.573135+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 33.9,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:10.628883+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:44"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:10.629018+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 22.51,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:12.678223+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:45"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:12.678342+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 16.55,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:14.712718+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:46"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:14.712816+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 17.84,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:17.747948+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "slow mode enabled",
+    "slow_seconds": 1.0
+  },
+  {
+    "timestamp": "2026-06-27T09:12:17.761264+00:00",
+    "service": "app",
+    "severity": "WARNING",
+    "message": "slow database query: artificial delay 1.0s",
+    "slow_seconds": 1.0
+  },
+  {
+    "timestamp": "2026-06-27T09:12:18.789255+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:47"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:18.789438+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 1038.67,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:20.329783+00:00",
+    "service": "app",
+    "severity": "WARNING",
+    "message": "slow database query: artificial delay 1.0s",
+    "slow_seconds": 1.0
+  },
+  {
+    "timestamp": "2026-06-27T09:12:21.353336+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:48"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:21.353477+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 1032.97,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:22.901393+00:00",
+    "service": "app",
+    "severity": "WARNING",
+    "message": "slow database query: artificial delay 1.0s",
+    "slow_seconds": 1.0
+  },
+  {
+    "timestamp": "2026-06-27T09:12:23.925176+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:49"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:23.925309+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 1034.98,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:26.163036+00:00",
+    "service": "app",
+    "severity": "WARNING",
+    "message": "slow database query: artificial delay 1.0s",
+    "slow_seconds": 1.0
+  },
+  {
+    "timestamp": "2026-06-27T09:12:27.189643+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:50"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:27.189784+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 1036.29,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:28.726062+00:00",
+    "service": "app",
+    "severity": "WARNING",
+    "message": "slow database query: artificial delay 1.0s",
+    "slow_seconds": 1.0
+  },
+  {
+    "timestamp": "2026-06-27T09:12:29.757701+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:51"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:29.757876+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 1044.66,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:31.298426+00:00",
+    "service": "app",
+    "severity": "WARNING",
+    "message": "slow database query: artificial delay 1.0s",
+    "slow_seconds": 1.0
+  },
+  {
+    "timestamp": "2026-06-27T09:12:32.321224+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:52"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:32.321424+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 1033.18,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:33.863666+00:00",
+    "service": "app",
+    "severity": "WARNING",
+    "message": "slow database query: artificial delay 1.0s",
+    "slow_seconds": 1.0
+  },
+  {
+    "timestamp": "2026-06-27T09:12:34.888684+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:53"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:34.888949+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 1037.74,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:36.895216+00:00",
+    "service": "app",
+    "severity": "WARNING",
+    "message": "slow database query: artificial delay 1.0s",
+    "slow_seconds": 1.0
+  },
+  {
+    "timestamp": "2026-06-27T09:12:37.913327+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:54"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:37.913386+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 1028.34,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:39.438294+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "slow mode disabled",
+    "slow_seconds": 0.0
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "timestamp": "2026-06-27T09:12:07.527305+00:00",
+    "phase": "baseline",
+    "cpu_percent": 0.21,
+    "memory_percent": 14.92,
+    "request_latency": 14.93,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:12:09.602255+00:00",
+    "phase": "baseline",
+    "cpu_percent": 0.16,
+    "memory_percent": 15.03,
+    "request_latency": 47.42,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:12:11.657168+00:00",
+    "phase": "baseline",
+    "cpu_percent": 0.22,
+    "memory_percent": 14.92,
+    "request_latency": 26.78,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:12:13.692400+00:00",
+    "phase": "baseline",
+    "cpu_percent": 0.19,
+    "memory_percent": 14.92,
+    "request_latency": 21.11,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:12:16.739282+00:00",
+    "phase": "baseline",
+    "cpu_percent": 0.21,
+    "memory_percent": 15.01,
+    "request_latency": 20.69,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:12:19.812430+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.17,
+    "memory_percent": 15.01,
+    "request_latency": 1040.89,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:12:22.379680+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.18,
+    "memory_percent": 15.01,
+    "request_latency": 1036.3,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:12:25.645993+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.2,
+    "memory_percent": 15.01,
+    "request_latency": 1040.88,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:12:28.206730+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.19,
+    "memory_percent": 15.01,
+    "request_latency": 1039.33,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:12:30.784847+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.3,
+    "memory_percent": 15.01,
+    "request_latency": 1049.91,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:12:33.344579+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.18,
+    "memory_percent": 15.01,
+    "request_latency": 1036.4,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:12:36.381431+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.19,
+    "memory_percent": 15.01,
+    "request_latency": 1045.1,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:12:38.929380+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.17,
+    "memory_percent": 15.02,
+    "request_latency": 1032.24,
+    "request_ok": true
+  }
+]

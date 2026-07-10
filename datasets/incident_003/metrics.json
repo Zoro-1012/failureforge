@@ -1,0 +1,138 @@
+[
+  {
+    "timestamp": "2026-06-27T09:11:31.789937+00:00",
+    "phase": "baseline",
+    "cpu_percent": 0.25,
+    "memory_percent": 14.92,
+    "request_latency": 18.18,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:11:33.846034+00:00",
+    "phase": "baseline",
+    "cpu_percent": 0.15,
+    "memory_percent": 14.93,
+    "request_latency": 28.02,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:11:36.895170+00:00",
+    "phase": "baseline",
+    "cpu_percent": 0.27,
+    "memory_percent": 14.92,
+    "request_latency": 38.1,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:11:38.997598+00:00",
+    "phase": "baseline",
+    "cpu_percent": 0.32,
+    "memory_percent": 14.93,
+    "request_latency": 65.5,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:11:41.101412+00:00",
+    "phase": "baseline",
+    "cpu_percent": 0.56,
+    "memory_percent": 14.92,
+    "request_latency": 33.6,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:11:43.201704+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.28,
+    "memory_percent": 20.79,
+    "request_latency": 20.59,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:11:45.247596+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.18,
+    "memory_percent": 26.67,
+    "request_latency": 14.53,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:11:47.264086+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.25,
+    "memory_percent": 32.54,
+    "request_latency": 11.96,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:11:49.270463+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.24,
+    "memory_percent": 38.41,
+    "request_latency": 11.14,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:11:51.279317+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.18,
+    "memory_percent": 44.38,
+    "request_latency": 20.42,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:11:53.300980+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.28,
+    "memory_percent": 50.16,
+    "request_latency": 26.26,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:11:55.336494+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.25,
+    "memory_percent": 56.03,
+    "request_latency": 64.22,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:11:57.375632+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.31,
+    "memory_percent": 61.9,
+    "request_latency": 17.31,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:11:59.391271+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.54,
+    "memory_percent": 67.79,
+    "request_latency": 23.75,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:12:01.415552+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.19,
+    "memory_percent": 73.65,
+    "request_latency": 11.15,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:12:03.430142+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.23,
+    "memory_percent": 79.53,
+    "request_latency": 25.54,
+    "request_ok": true
+  },
+  {
+    "timestamp": "2026-06-27T09:12:05.472014+00:00",
+    "phase": "failure",
+    "cpu_percent": 0.22,
+    "memory_percent": 85.4,
+    "request_latency": 8.7,
+    "request_ok": true
+  }
+]

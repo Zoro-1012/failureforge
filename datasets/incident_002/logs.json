@@ -1,0 +1,341 @@
+[
+  {
+    "timestamp": "2026-06-27T09:11:02.012390+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:14"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:02.012491+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 13.79,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:04.056025+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:15"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:04.056093+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 19.55,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:07.098922+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:16"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:07.098990+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 19.37,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:09.137778+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:17"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:09.137851+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 19.12,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:11.220338+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:18"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:11.220555+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 38.9,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:14.749922+00:00",
+    "service": "app",
+    "severity": "ERROR",
+    "message": "deadlock detected: transaction aborted (deadlock detected\nDETAIL:  Process 310 waits for ShareLock on transaction 765; blocked by process 311.\nProcess 311 waits for ShareLock on transaction 764; blocked by process 310.\nHINT:  See server log for query details.\nCONTEXT:  while updating tuple (0,2) in relation \"accounts\")",
+    "order": "ab",
+    "error_type": "DeadlockDetected"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:14.750268+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /deadlock",
+    "latency_ms": 1437.92
+  },
+  {
+    "timestamp": "2026-06-27T09:11:14.753779+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "transaction committed",
+    "order": "ba"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:14.754019+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /deadlock",
+    "latency_ms": 1440.05
+  },
+  {
+    "timestamp": "2026-06-27T09:11:14.779482+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:19"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:14.779545+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 17.51,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:18.137636+00:00",
+    "service": "app",
+    "severity": "ERROR",
+    "message": "deadlock detected: transaction aborted (deadlock detected\nDETAIL:  Process 323 waits for ShareLock on transaction 768; blocked by process 322.\nProcess 322 waits for ShareLock on transaction 767; blocked by process 323.\nHINT:  See server log for query details.\nCONTEXT:  while updating tuple (0,5) in relation \"accounts\")",
+    "order": "ba",
+    "error_type": "DeadlockDetected"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:18.137971+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /deadlock",
+    "latency_ms": 1421.13
+  },
+  {
+    "timestamp": "2026-06-27T09:11:18.138818+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "transaction committed",
+    "order": "ab"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:18.138906+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /deadlock",
+    "latency_ms": 1421.94
+  },
+  {
+    "timestamp": "2026-06-27T09:11:18.153386+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:20"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:18.153428+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 12.53,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:20.606996+00:00",
+    "service": "app",
+    "severity": "ERROR",
+    "message": "deadlock detected: transaction aborted (deadlock detected\nDETAIL:  Process 327 waits for ShareLock on transaction 771; blocked by process 326.\nProcess 326 waits for ShareLock on transaction 770; blocked by process 327.\nHINT:  See server log for query details.\nCONTEXT:  while updating tuple (0,7) in relation \"accounts\")",
+    "order": "ba",
+    "error_type": "DeadlockDetected"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:20.608008+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /deadlock",
+    "latency_ms": 1420.46
+  },
+  {
+    "timestamp": "2026-06-27T09:11:20.608424+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "transaction committed",
+    "order": "ab"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:20.608624+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /deadlock",
+    "latency_ms": 1421.29
+  },
+  {
+    "timestamp": "2026-06-27T09:11:20.639949+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:21"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:20.640063+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 20.64,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:23.080170+00:00",
+    "service": "app",
+    "severity": "ERROR",
+    "message": "deadlock detected: transaction aborted (deadlock detected\nDETAIL:  Process 338 waits for ShareLock on transaction 774; blocked by process 337.\nProcess 337 waits for ShareLock on transaction 773; blocked by process 338.\nHINT:  See server log for query details.\nCONTEXT:  while updating tuple (0,10) in relation \"accounts\")",
+    "order": "ba",
+    "error_type": "DeadlockDetected"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:23.080641+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /deadlock",
+    "latency_ms": 1415.97
+  },
+  {
+    "timestamp": "2026-06-27T09:11:23.081811+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "transaction committed",
+    "order": "ab"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:23.081980+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /deadlock",
+    "latency_ms": 1418.13
+  },
+  {
+    "timestamp": "2026-06-27T09:11:23.099544+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:22"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:23.099590+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 14.96,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:25.566796+00:00",
+    "service": "app",
+    "severity": "ERROR",
+    "message": "deadlock detected: transaction aborted (deadlock detected\nDETAIL:  Process 341 waits for ShareLock on transaction 776; blocked by process 342.\nProcess 342 waits for ShareLock on transaction 777; blocked by process 341.\nHINT:  See server log for query details.\nCONTEXT:  while updating tuple (0,13) in relation \"accounts\")",
+    "order": "ba",
+    "error_type": "DeadlockDetected"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:25.567298+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /deadlock",
+    "latency_ms": 1425.27
+  },
+  {
+    "timestamp": "2026-06-27T09:11:25.569853+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "transaction committed",
+    "order": "ab"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:25.570563+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /deadlock",
+    "latency_ms": 1428.16
+  },
+  {
+    "timestamp": "2026-06-27T09:11:25.594305+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:23"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:25.594418+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 14.86,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:28.639082+00:00",
+    "service": "app",
+    "severity": "ERROR",
+    "message": "deadlock detected: transaction aborted (deadlock detected\nDETAIL:  Process 352 waits for ShareLock on transaction 779; blocked by process 353.\nProcess 353 waits for ShareLock on transaction 780; blocked by process 352.\nHINT:  See server log for query details.\nCONTEXT:  while updating tuple (0,17) in relation \"accounts\")",
+    "order": "ab",
+    "error_type": "DeadlockDetected"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:28.639613+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /deadlock",
+    "latency_ms": 1422.99
+  },
+  {
+    "timestamp": "2026-06-27T09:11:28.648460+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "transaction committed",
+    "order": "ba"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:28.648873+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /deadlock",
+    "latency_ms": 1431.8
+  },
+  {
+    "timestamp": "2026-06-27T09:11:28.675897+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:24"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:28.675993+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 21.29,
+    "cache": "miss"
+  }
+]

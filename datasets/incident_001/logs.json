@@ -1,0 +1,205 @@
+[
+  {
+    "timestamp": "2026-06-27T09:10:31.055322+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:1"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:31.055676+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 23.37,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:33.112517+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:2"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:33.112567+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 17.51,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:35.212647+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:3"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:35.213063+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 35.08,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:38.233203+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:4"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:38.233271+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 17.46,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:40.270518+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:5"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:40.270587+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 16.83,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:42.522258+00:00",
+    "service": "app",
+    "severity": "ERROR",
+    "message": "Redis connection refused: cache unavailable (Error -2 connecting to redis:6379. Name or service not known.)",
+    "key": "item:6",
+    "error_type": "ConnectionError"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:42.526002+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 58.89,
+    "cache": "error"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:44.560531+00:00",
+    "service": "app",
+    "severity": "ERROR",
+    "message": "Redis connection refused: cache unavailable (Error -2 connecting to redis:6379. Name or service not known.)",
+    "key": "item:7",
+    "error_type": "ConnectionError"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:44.566983+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 22.89,
+    "cache": "error"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:47.598160+00:00",
+    "service": "app",
+    "severity": "ERROR",
+    "message": "Redis connection refused: cache unavailable (Error -2 connecting to redis:6379. Name or service not known.)",
+    "key": "item:8",
+    "error_type": "ConnectionError"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:47.605963+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 27.32,
+    "cache": "error"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:49.650442+00:00",
+    "service": "app",
+    "severity": "ERROR",
+    "message": "Redis connection refused: cache unavailable (Error -2 connecting to redis:6379. Name or service not known.)",
+    "key": "item:9",
+    "error_type": "ConnectionError"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:49.658108+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 28.33,
+    "cache": "error"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:51.745278+00:00",
+    "service": "app",
+    "severity": "ERROR",
+    "message": "Redis connection refused: cache unavailable (Error -2 connecting to redis:6379. Name or service not known.)",
+    "key": "item:10",
+    "error_type": "ConnectionError"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:51.766576+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 58.44,
+    "cache": "error"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:53.836208+00:00",
+    "service": "app",
+    "severity": "ERROR",
+    "message": "Redis connection refused: cache unavailable (Error -2 connecting to redis:6379. Name or service not known.)",
+    "key": "item:11",
+    "error_type": "ConnectionError"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:53.843131+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 24.23,
+    "cache": "error"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:56.959587+00:00",
+    "service": "app",
+    "severity": "ERROR",
+    "message": "Redis connection refused: cache unavailable (Error -2 connecting to redis:6379. Name or service not known.)",
+    "key": "item:12",
+    "error_type": "ConnectionError"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:56.969155+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 65.26,
+    "cache": "error"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:59.027014+00:00",
+    "service": "app",
+    "severity": "ERROR",
+    "message": "Redis connection refused: cache unavailable (Error -2 connecting to redis:6379. Name or service not known.)",
+    "key": "item:13",
+    "error_type": "ConnectionError"
+  },
+  {
+    "timestamp": "2026-06-27T09:10:59.030888+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 24.08,
+    "cache": "error"
+  }
+]

@@ -1,0 +1,348 @@
+[
+  {
+    "timestamp": "2026-06-27T09:11:29.966492+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:25"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:29.966581+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 13.69,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:32.821365+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:26"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:32.821545+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 13.98,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:34.881534+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:27"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:34.881968+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 29.77,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:37.957275+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:28"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:37.957513+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 47.08,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:40.031657+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:29"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:40.031742+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 29.27,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:42.150288+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "memory allocated",
+    "leaked_mb": 15.0
+  },
+  {
+    "timestamp": "2026-06-27T09:11:42.164527+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:30"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:42.164876+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 12.48,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:44.028283+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "memory allocated",
+    "leaked_mb": 30.0
+  },
+  {
+    "timestamp": "2026-06-27T09:11:44.043063+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:31"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:44.043104+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 13.5,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:46.074413+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "memory allocated",
+    "leaked_mb": 45.0
+  },
+  {
+    "timestamp": "2026-06-27T09:11:46.087710+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:32"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:46.087776+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 11.05,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:48.073687+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "memory allocated",
+    "leaked_mb": 60.0
+  },
+  {
+    "timestamp": "2026-06-27T09:11:48.085403+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:33"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:48.085451+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 9.91,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:50.161681+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "memory allocated",
+    "leaked_mb": 75.0
+  },
+  {
+    "timestamp": "2026-06-27T09:11:50.182349+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:34"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:50.182401+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 19.33,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:52.166003+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "memory allocated",
+    "leaked_mb": 90.0
+  },
+  {
+    "timestamp": "2026-06-27T09:11:52.197119+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:35"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:52.197254+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 24.15,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:54.139847+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "memory allocated",
+    "leaked_mb": 105.0
+  },
+  {
+    "timestamp": "2026-06-27T09:11:54.208825+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:36"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:54.210346+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 62.95,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:56.338815+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "memory allocated",
+    "leaked_mb": 120.0
+  },
+  {
+    "timestamp": "2026-06-27T09:11:56.357801+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:37"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:56.357847+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 15.85,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:58.220203+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "memory allocated",
+    "leaked_mb": 135.0
+  },
+  {
+    "timestamp": "2026-06-27T09:11:58.245903+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:38"
+  },
+  {
+    "timestamp": "2026-06-27T09:11:58.245982+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 22.48,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:00.246040+00:00",
+    "service": "app",
+    "severity": "WARNING",
+    "message": "OOM warning: memory usage high (150.0 MB retained)",
+    "leaked_mb": 150.0
+  },
+  {
+    "timestamp": "2026-06-27T09:12:00.257204+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:39"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:00.257250+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 10.27,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:02.303263+00:00",
+    "service": "app",
+    "severity": "WARNING",
+    "message": "OOM warning: memory usage high (165.0 MB retained)",
+    "leaked_mb": 165.0
+  },
+  {
+    "timestamp": "2026-06-27T09:12:02.329402+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:40"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:02.329544+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 24.45,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:04.246236+00:00",
+    "service": "app",
+    "severity": "WARNING",
+    "message": "OOM warning: memory usage high (180.0 MB retained)",
+    "leaked_mb": 180.0
+  },
+  {
+    "timestamp": "2026-06-27T09:12:04.254971+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "cache miss; loaded from db and populated cache",
+    "key": "item:41"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:04.255015+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "served /work",
+    "latency_ms": 7.91,
+    "cache": "miss"
+  },
+  {
+    "timestamp": "2026-06-27T09:12:06.293869+00:00",
+    "service": "app",
+    "severity": "INFO",
+    "message": "memory released",
+    "leaked_mb": 0.0
+  }
+]

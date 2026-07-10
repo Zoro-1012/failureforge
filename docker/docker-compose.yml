@@ -1,0 +1,99 @@
+name: failureforge
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: ff-postgres
+    environment:
+      POSTGRES_USER: forge
+      POSTGRES_PASSWORD: forge
+      POSTGRES_DB: failureforge
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U forge -d failureforge"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    networks: [forge]
+
+  redis:
+    image: redis:7-alpine
+    container_name: ff-redis
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    networks: [forge]
+
+  app:
+    build:
+      context: ../backend/app
+    container_name: ff-app
+    environment:
+      SERVICE_NAME: app
+      DATABASE_URL: postgresql://forge:forge@postgres:5432/failureforge
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      LOG_DIR: /var/log/failureforge
+      LEAK_WARN_MB: 150
+    # Bounded memory so the memory_leak scenario shows a meaningful memory_percent
+    # and crosses the OOM-warning threshold without killing the container.
+    mem_limit: 256m
+    volumes:
+      - logs:/var/log/failureforge
+    ports:
+      - "8001:8001"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks: [forge]
+
+  orchestrator:
+    build:
+      context: ../backend/orchestrator
+    container_name: ff-orchestrator
+    environment:
+      REDIS_CONTAINER: ff-redis
+      APP_CONTAINER: ff-app
+      POSTGRES_CONTAINER: ff-postgres
+      APP_LOG_FILE: /var/log/failureforge/app.log
+      DATASETS_DIR: /datasets
+      DATABASE_URL: postgresql://forge:forge@postgres:5432/failureforge
+      # AI diagnosis (Phase 3). Set GEMINI_API_KEY in your shell or a .env file.
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-2.5-flash}
+      # "gemini" (default) or "stub" for an offline deterministic diagnoser (E2E).
+      DIAGNOSIS_PROVIDER: ${DIAGNOSIS_PROVIDER:-gemini}
+    volumes:
+      - logs:/var/log/failureforge
+      - ../datasets:/datasets
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      app:
+        condition: service_started
+    networks: [forge]
+
+  frontend:
+    build:
+      context: ../frontend
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8000}
+    container_name: ff-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - orchestrator
+    networks: [forge]
+
+networks:
+  forge:
+    driver: bridge
+
+volumes:
+  logs:

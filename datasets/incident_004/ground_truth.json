@@ -1,0 +1,7 @@
+{
+  "incident_id": "incident_004",
+  "scenario": "slow_database",
+  "ground_truth": "slow_database",
+  "log_count": 36,
+  "metric_count": 13
+}

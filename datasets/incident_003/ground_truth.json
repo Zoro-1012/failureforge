@@ -1,0 +1,7 @@
+{
+  "incident_id": "incident_003",
+  "scenario": "memory_leak",
+  "ground_truth": "memory_leak",
+  "log_count": 47,
+  "metric_count": 17
+}

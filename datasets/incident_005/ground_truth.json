@@ -1,0 +1,7 @@
+{
+  "incident_id": "incident_005",
+  "scenario": "redis_outage",
+  "ground_truth": "redis_outage",
+  "log_count": 26,
+  "metric_count": 13
+}

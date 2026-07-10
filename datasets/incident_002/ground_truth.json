@@ -1,0 +1,7 @@
+{
+  "incident_id": "incident_002",
+  "scenario": "database_deadlock",
+  "ground_truth": "database_deadlock",
+  "log_count": 46,
+  "metric_count": 11
+}
