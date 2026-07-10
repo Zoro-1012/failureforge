@@ -194,7 +194,3 @@ automatically receives reliability assessments and failure-analysis reports.
 
 See [`ROADMAP.md`](ROADMAP.md) for milestone detail. Contributions are welcome —
 see [`CONTRIBUTING.md`](CONTRIBUTING.md).
-
-## License
-
-[MIT](LICENSE) © Sneha Choudhary
