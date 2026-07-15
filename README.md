@@ -23,16 +23,6 @@ Generate infrastructure failures • Capture real telemetry • Diagnose with AI
 
 ---
 
-# 🎥 Demo
-
-> **Demo Video:** *(Add YouTube or Loom link here)*
-
-> **Live Dashboard Screenshots:** *(Add screenshots below)*
-
-![Dashboard](docs/images/dashboard.png)
-
----
-
 # 🚀 Why FailureForge?
 
 Modern LLMs can summarize logs, but can they accurately identify the real root cause of infrastructure failures?
