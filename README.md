@@ -1,194 +1,336 @@
-# FailureForge
+<h1 align="center">⚒️ FailureForge</h1>
 
-**An AI-powered distributed-systems failure simulation and evaluation platform.**
+<p align="center">
+An AI-powered distributed systems failure simulation and LLM evaluation platform.
+</p>
 
-FailureForge creates realistic infrastructure failures in a controlled distributed
-environment, captures the telemetry generated during each incident, and evaluates
-AI-generated root-cause analyses against **known ground truth** — turning "can an
-LLM diagnose this outage?" into a measurable benchmark.
+<p align="center">
+Generate infrastructure failures • Capture real telemetry • Diagnose with AI • Benchmark against Ground Truth
+</p>
 
-Because every failure is injected deliberately, the true root cause is always
-known, which is what makes the diagnostic accuracy scoring valid.
+<p align="center">
 
----
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![Next.js](https://img.shields.io/badge/Next.js-15-black)
+![Docker](https://img.shields.io/badge/Docker-Compose-blue)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
+![Redis](https://img.shields.io/badge/Redis-Cache-red)
+![Gemini](https://img.shields.io/badge/Gemini-AI-purple)
+![License](https://img.shields.io/github/license/Zoro-1012/failureforge)
 
-## Current features
-
-- **Redis outage simulation** — stops the Redis container; surfaces connection
-  failures and elevated latency.
-- **Database deadlock simulation** — drives competing transactions to trigger a
-  real PostgreSQL deadlock.
-- **Memory leak simulation** — retained allocations against a bounded container,
-  producing rising memory usage and OOM warnings.
-- **Slow database simulation** — injects artificial query delays, producing
-  latency spikes.
-- **Telemetry collection** — structured JSON logs (`timestamp`, `service`,
-  `severity`, `message`) and metrics (`cpu_percent`, `memory_percent`,
-  `request_latency`) per incident.
-- **Incident persistence** — every incident's logs, metrics, and ground truth are
-  stored in PostgreSQL and exported as a portable benchmark dataset.
-- **Diagnosis engine** — a single-pass pipeline that produces a structured
-  root-cause analysis (`predicted_cause`, `confidence`, `evidence`,
-  `recommended_fix`) from logs + metrics. Supports a Gemini-backed provider and an
-  offline deterministic provider for reproducible runs/CI.
-- **Evaluation framework** — accuracy, precision, recall, and F1 (overall and per
-  scenario) plus a confusion matrix, comparing predictions to ground truth.
-- **Dashboard** — a Next.js UI to launch scenarios, inspect incidents (logs,
-  metrics, diagnosis vs. ground truth), and view benchmark metrics.
-
-### Verified with real telemetry
-
-The **simulate → telemetry → persistence** pipeline has been run end-to-end in
-Docker and verified with real captured data:
-
-- Redis outages generate `connection refused` errors and latency increases.
-- Slow-database scenarios generate clear latency spikes (≈26 ms → ≈1040 ms).
-- Memory-leak scenarios generate warning logs and rising memory usage.
-- Incidents and their telemetry are persisted and queried back correctly.
-
-The diagnosis and evaluation layers are implemented and covered by unit tests plus
-a deterministic end-to-end suite (using the offline diagnosis provider). The
-Gemini-backed diagnosis path is implemented and runs when an API key is supplied.
+</p>
 
 ---
 
-## Architecture
+# 🎥 Demo
 
-```
+> **Demo Video:** *(Add YouTube or Loom link here)*
+
+> **Live Dashboard Screenshots:** *(Add screenshots below)*
+
+![Dashboard](docs/images/dashboard.png)
+
+---
+
+# 🚀 Why FailureForge?
+
+Modern LLMs can summarize logs, but can they accurately identify the real root cause of infrastructure failures?
+
+FailureForge creates controlled failures inside a distributed environment, captures production-like telemetry, diagnoses incidents using AI, and evaluates the diagnosis against the known ground truth.
+
+Because every incident is intentionally injected, the true root cause is always known—making diagnostic benchmarking objective and reproducible.
+
+---
+
+# ✨ Highlights
+
+- ⚡ Docker-based distributed environment
+- 🤖 AI-powered root cause analysis
+- 📊 Automatic benchmark generation
+- 📈 Precision / Recall / F1 evaluation
+- 🔬 Reproducible experiments
+- 📦 Exportable benchmark datasets
+- 🧪 End-to-end tested
+- 🌐 Interactive Next.js dashboard
+
+---
+
+# 📌 Features
+
+| Feature | Status |
+|---------|--------|
+| Redis Outage Simulation | ✅ |
+| PostgreSQL Deadlock Simulation | ✅ |
+| Memory Leak Simulation | ✅ |
+| Slow Database Simulation | ✅ |
+| Telemetry Collection | ✅ |
+| Incident Persistence | ✅ |
+| AI Diagnosis Engine | ✅ |
+| Evaluation Framework | ✅ |
+| Interactive Dashboard | ✅ |
+
+---
+
+# 🏗 Architecture
+
+```text
         User
-         │
-         ▼
-  Next.js Dashboard            (:3000)
-         │
-         ▼
-  FastAPI Backend / Orchestrator   (:8000)
-         │
-         ▼
-  Failure Orchestrator   ── controls containers via the Docker socket
-         │
-         ▼
-  Distributed Environment    ── Application service (:8001) + PostgreSQL + Redis
-         │
-         ▼
-  Telemetry Collection   ── logs + metrics per incident
-         │
-         ▼
-  PostgreSQL             ── incidents · logs · metrics · diagnoses
-         │
-         ▼
-  Diagnosis Engine       ── logs + metrics → root-cause analysis
-         │
-         ▼
-  Evaluation Engine      ── prediction vs. ground truth → accuracy / precision / recall
+          │
+          ▼
+  Next.js Dashboard
+          │
+          ▼
+ FastAPI Backend / Orchestrator
+          │
+          ▼
+ Failure Orchestrator
+          │
+          ▼
+ Distributed Environment
+ (App + PostgreSQL + Redis)
+          │
+          ▼
+ Telemetry Collection
+          │
+          ▼
+ PostgreSQL
+          │
+          ▼
+ AI Diagnosis Engine
+          │
+          ▼
+ Evaluation Engine
 ```
 
-A detailed component diagram, request sequence, and data model (rendered with
-Mermaid) are in [`ARCHITECTURE.md`](ARCHITECTURE.md).
-
-### Tech stack
-
-Backend: Python, FastAPI · Frontend: Next.js 15, TypeScript, Tailwind CSS ·
-Storage: PostgreSQL · Cache: Redis · AI: Gemini API · Infra: Docker, Docker
-Compose · Tests: Pytest, Playwright.
-
-### Repository layout
-
-```
-backend/
-  app/            Application service (the system under test)
-  orchestrator/   Control plane: scenarios, telemetry, storage, diagnosis, evaluation
-frontend/         Next.js 15 + TypeScript + Tailwind dashboard
-docker/           docker-compose.yml
-datasets/         Exported benchmark incidents (incident_NNN/…)
-scripts/          Demo + E2E runners
-docs/             Per-phase notes, E2E guide
-tests/            Pytest (unit + live-stack)
-```
+A complete architecture diagram with Mermaid visualizations is available in **ARCHITECTURE.md**.
 
 ---
 
-## Quick start
+# 📷 Dashboard Preview
 
-Requires Docker Desktop (with Docker Compose).
+### Home
 
-```bash
-git clone https://github.com/Zoro-1012/failureforge.git
-cd failureforge
+![Home](docs/images/home.png)
 
-make up                 # build & start all services
-open http://localhost:3000
-```
+### Incident Details
 
-Run a failure and capture an incident:
+![Incident](docs/images/incident.png)
 
-```bash
-make redis-outage       # also: make deadlock | memory-leak | slow-database
-make incidents          # list captured incidents
-```
+### Benchmark Metrics
 
-### AI diagnosis
-
-The diagnosis engine has two providers, selected by `DIAGNOSIS_PROVIDER`:
-
-- **`gemini`** (default) — real LLM diagnosis. Add a key to a `.env` file at the
-  repo root:
-
-  ```
-  GEMINI_API_KEY=your_key_here
-  ```
-
-- **`stub`** — an offline, deterministic diagnoser (no key needed), used for demos
-  and tests:
-
-  ```bash
-  DIAGNOSIS_PROVIDER=stub docker compose -f docker/docker-compose.yml up -d --force-recreate orchestrator
-  make demo            # runs all scenarios, diagnoses them, prints evaluation
-  ```
-
-Then `make evaluation` prints accuracy / precision / recall, and the dashboard
-shows the per-scenario breakdown.
+![Metrics](docs/images/metrics.png)
 
 ---
 
-## Demo workflow
+# ⚙ Tech Stack
 
-1. Launch the Redis Outage scenario (dashboard button or `make redis-outage`).
-2. The orchestrator stops the Redis container.
-3. The application service emits `connection refused` errors; latency rises.
-4. Telemetry (logs + metrics) is collected for the incident window.
-5. The incident is persisted to PostgreSQL and exported to `datasets/`.
-6. The diagnosis engine analyzes the logs + metrics and produces a root-cause
-   analysis.
-7. The evaluation engine compares the prediction to the known ground truth and
-   updates the benchmark metrics.
+## Backend
 
----
+- Python
+- FastAPI
+
+## Frontend
+
+- Next.js 15
+- TypeScript
+- Tailwind CSS
+
+## Infrastructure
+
+- Docker
+- Docker Compose
+
+## Database
+
+- PostgreSQL
+- Redis
+
+## AI
+
+- Gemini API
 
 ## Testing
 
-```bash
-make test            # unit tests (offline)
-make e2e             # backend pipeline E2E (live stack, stub diagnosis provider)
-make e2e-ui          # frontend Playwright E2E (full stack)
-```
-
-See [`docs/E2E.md`](docs/E2E.md) for details.
+- Pytest
+- Playwright
 
 ---
 
-## Future roadmap
+# 📂 Repository Structure
 
-FailureForge is evolving toward a generalized reliability-engineering platform.
-**The following is future work and is NOT yet implemented:**
+```text
+backend/
+ ├── app/
+ ├── orchestrator/
 
-- Accepting arbitrary containerized applications (upload a Docker Compose project).
-- Automatic service-dependency discovery.
-- Dynamic, dependency-aware fault injection.
-- AI-generated resilience reports and reliability scoring.
-- Remediation recommendations.
+frontend/
 
-**Long-term vision:** a developer uploads a Docker Compose project and
-automatically receives reliability assessments and failure-analysis reports.
+docker/
 
-See [`ROADMAP.md`](ROADMAP.md) for milestone detail. Contributions are welcome —
-see [`CONTRIBUTING.md`](CONTRIBUTING.md).
+datasets/
+
+scripts/
+
+docs/
+
+tests/
+```
+
+---
+
+# 🚀 Quick Start
+
+## Clone Repository
+
+```bash
+git clone https://github.com/Zoro-1012/failureforge.git
+
+cd failureforge
+```
+
+## Start Everything
+
+```bash
+make up
+```
+
+Open
+
+```
+http://localhost:3000
+```
+
+---
+
+# 🚨 Run Failure Scenarios
+
+Redis Outage
+
+```bash
+make redis-outage
+```
+
+Database Deadlock
+
+```bash
+make deadlock
+```
+
+Memory Leak
+
+```bash
+make memory-leak
+```
+
+Slow Database
+
+```bash
+make slow-database
+```
+
+List captured incidents
+
+```bash
+make incidents
+```
+
+---
+
+# 🤖 AI Diagnosis
+
+FailureForge supports two diagnosis providers.
+
+## Gemini
+
+Create a `.env`
+
+```env
+GEMINI_API_KEY=your_api_key
+```
+
+---
+
+## Offline Stub
+
+```bash
+DIAGNOSIS_PROVIDER=stub docker compose -f docker/docker-compose.yml up -d --force-recreate orchestrator
+
+make demo
+```
+
+Generate benchmark metrics
+
+```bash
+make evaluation
+```
+
+---
+
+# 🔄 Demo Workflow
+
+1. Launch a failure scenario.
+2. Infrastructure failure is injected.
+3. Application emits logs and metrics.
+4. Telemetry is captured.
+5. Incident is stored in PostgreSQL.
+6. AI generates root cause analysis.
+7. Evaluation compares prediction with ground truth.
+8. Benchmark metrics are updated.
+
+---
+
+# 🧪 Testing
+
+```bash
+make test
+```
+
+Backend End-to-End
+
+```bash
+make e2e
+```
+
+Frontend Playwright
+
+```bash
+make e2e-ui
+```
+
+---
+
+# 📈 Future Roadmap
+
+Planned features include:
+
+- Upload any Docker Compose application
+- Automatic dependency discovery
+- Dynamic fault injection
+- AI-generated resilience reports
+- Reliability scoring
+- Automated remediation recommendations
+
+---
+
+# 🎯 Motivation
+
+Current AI benchmarks evaluate language understanding.
+
+FailureForge evaluates whether an AI model can accurately diagnose distributed system failures using real infrastructure telemetry.
+
+It bridges the gap between Reliability Engineering, Chaos Engineering, Observability, and Generative AI.
+
+---
+
+# 🤝 Contributing
+
+Contributions, ideas, and feature requests are always welcome.
+
+Please check **CONTRIBUTING.md** before submitting a pull request.
+
+---
+
+# ⭐ If you found this project useful
+
+Please consider giving the repository a **Star ⭐**.
