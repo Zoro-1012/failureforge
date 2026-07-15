@@ -97,22 +97,6 @@ A complete architecture diagram with Mermaid visualizations is available in **AR
 
 ---
 
-# 📷 Dashboard Preview
-
-### Home
-
-![Home](docs/images/home.png)
-
-### Incident Details
-
-![Incident](docs/images/incident.png)
-
-### Benchmark Metrics
-
-![Metrics](docs/images/metrics.png)
-
----
-
 # ⚙ Tech Stack
 
 ## Backend
